@@ -23,14 +23,23 @@ But here is what I found to get Pluto working with my Raspberry Pi 3B+ (running 
         i.	https://wiki.analog.com/resources/tools-software/linux-software/libiio#building_on_the_linuxzynq_target
             1.	~$  sudo apt-get install libxml2 libxml2-dev bison flex libcdk5-dev cmake
             2.	~$  sudo apt-get install libaio-dev libusb-1.0-0-dev libserialport-dev libxml2-dev libavahi-client-dev doxygen graphviz
+            
             3.	~$  git clone https://github.com/analogdevicesinc/libiio.git
+            
             4.	~$  cd libiio
+            
             5.	~$  cmake ./
+            
             6.	~$  make all
+            
             7.	~$  sudo make install
+            
             8.	~$  PATH=/usr/lib/:$PATH
+            
             9.	~$  iio_info
+            
                   a.	This will return IIOLIB library version if it installed correctly
+                  
         ii.	https://wiki.analog.com/resources/eval/user-guides/ad-fmcomms5-ebz/multi-chip-sync#linux
             1.	cd back to pi@raspberrypi:~$:  
             2.	~$  git clone https://github.com/analogdevicesinc/libad9361-iio.git
