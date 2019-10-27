@@ -85,3 +85,4 @@ But here is what I found to get Pluto working with my Raspberry Pi 3B+ (running 
           d.	You should see graph or something open and run data from Pluto
           e.	If you get an error, make sure you used the command “cmake -DCMAKE_INSTALL_PREFIX=/usr .” in the gr-iio instructions above!
 
+ 
