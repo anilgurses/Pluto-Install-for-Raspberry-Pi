@@ -11,7 +11,7 @@ cd instl
 git clone https://github.com/analogdevicesinc/libiio.git
 cd libiio
 cmake ./
-make -j($nproc) all
+make -j 4 all
 make install
 PATH=/usr/lib/:$PATH
 
@@ -20,7 +20,7 @@ cd ..
 git clone https://github.com/analogdevicesinc/libad9361-iio.git
 cd libad9361-iio
 cmake ./
-make -j($nproc)
+make -j 4
 make install
 cd ..
 echo "Libad9361-iio is installed"
@@ -29,7 +29,7 @@ apt-get -y install libglib2.0-dev libgtk2.0-dev libgtkdatabox-dev libmatio-dev l
 git clone https://github.com/analogdevicesinc/iio-oscilloscope.git
 cd iio-oscilloscope
 git checkout origin/master
-make -j($nproc)
+make -j 4
 make install
 cd ..
 echo "iio-oscilloscope is installed"
@@ -41,7 +41,7 @@ apt-get -y install gnuradio-dev libxml2 libxml2-dev bison flex cmake git libaio-
 git clone https://github.com/analogdevicesinc/gr-iio.git
 cd gr-iio
 cmake -DCMAKE_INSTALL_PREFIX=/usr .
-make -j($nproc)
+make -j 4
 make install
 cd ..
 echo "Gnu Radio is installed"
