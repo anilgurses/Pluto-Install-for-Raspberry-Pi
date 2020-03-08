@@ -147,4 +147,7 @@ But here is what I found to get Pluto working with my Raspberry Pi 3B+ (running 
           
           e.	If you get an error, make sure you used the command “cmake -DCMAKE_INSTALL_PREFIX=/usr .” in the gr-iio instructions above!
 
- 
+## Automated Install
+If you want to easily install all the packages that described above, you could just execute the bash script with sudo privilege
+    
+    sudo sh ./install.sh
